@@ -65,7 +65,7 @@ pipeline {
 							configName: "tarun-jk-1",
 							verbose: true,
 							transfers: [
-								sshTransfer(execCommand: "cd jenkins_demo"),
+								sshTransfer(execCommand: "cd my_app"),
 								sshTransfer(execCommand: "python3 -m virtualenv env"),
 								sshTransfer(execCommand: "source env/bin/activate"),
 								sshTransfer(execCommand: "pip3 install --user -r requirements.txt"),
