@@ -62,7 +62,7 @@ pipeline {
 					continueOnError: false, failOnError: true,
 					publishers: [
 						sshPublisherDesc (
-							configName: "ssh",
+							configName: "tarun-jk-1",
 							verbose: true,
 							transfers: [
 								sshTransfer(execCommand: "kill -9 $(lsof -t -i:5000)"),
