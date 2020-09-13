@@ -62,7 +62,7 @@ pipeline {
 					continueOnError: false, failOnError: true,
 					publishers: [
 						sshPublisherDesc (
-							configName: "21046-abhishek",
+							configName: "ssh",
 							verbose: true,
 							transfers: [
 								sshTransfer(execCommand: "kill -9 $(lsof -t -i:5000)"),
